@@ -2,13 +2,13 @@ import os.path
 import csv
 
 def load():
-    #print("At first, enter the path to the file:")
-    # filename = str(input())
-    # if os.path.exists(filename) != True:
-     #        print("There is no such file or directory")
-     #        return exit()
-    #return filename
-    return "./data/emigration_statistics_from_sweden.csv"
+    print("At first, enter the path to the file:")
+    filename = str(input())
+    if os.path.exists(filename) != True:
+            print("There is no such file or directory")
+            return exit()
+    return filename
+    # return "./data/emigration_statistics_from_sweden.csv"
 
 def open_file(data_file):
     columns_file = {
