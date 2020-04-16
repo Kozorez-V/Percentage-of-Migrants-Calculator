@@ -33,7 +33,11 @@ year.show_result(result_validation, selected_year)
 
 # get count all countries and selected country
 count_people = people.get_count(data, selected_number_country, selected_year, selected_number_sex)
+result_validation = people.validation(count_people)
+people.show_result(result_validation)
 
 #get calculation result
 result = calculation_of_percentage.calculation(count_people)
 calculation_of_percentage.show_calculation_result(result)
+
+#46981
