@@ -1,3 +1,5 @@
+import re
+
 def get_count(columns_file, country, year, sex):
     count = {
         "count_all_countries": 0,
