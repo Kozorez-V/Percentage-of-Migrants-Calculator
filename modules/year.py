@@ -6,7 +6,6 @@ def show_year(columns_file):
 
     return years
 
-
 def get_year():
     print("Enter the year by which the calculation will be made:")
     selected_year = str(input())
