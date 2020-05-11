@@ -33,7 +33,8 @@ result_validation = year.validation(selected_year, years)
 year.show_result(result_validation, selected_year)
 
 # get count all countries and selected country
-count_people = check(people.get_count(data, selected_number_country, selected_year, selected_number_sex))
+check(people.get_count(data, selected_number_country, selected_year, selected_number_sex))
+count_people = people.get_count(data, selected_number_country, selected_year, selected_number_sex)
 result_validation = people.validation(count_people)
 people.show_result(result_validation)
 
