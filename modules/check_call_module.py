@@ -6,4 +6,3 @@ def check(function):
                 "message": "It isn't dictionary"
             }
     return wrapper
-
