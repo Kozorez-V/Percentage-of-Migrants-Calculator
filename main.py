@@ -12,7 +12,7 @@ greet.show()
 data_file = source.load()
 validation_file.check_format(data_file)
 data = source.open_file(data_file)
-validation_file.check_columns_file(data)
+# validation_file.check_columns_file(data)
 
 # get number of country and validation
 country.show_countries(data)
@@ -40,4 +40,3 @@ people.show_result(result_validation)
 result = calculation_of_percentage.calculation(count_people)
 calculation_of_percentage.show_calculation_result(result)
 
-#46981

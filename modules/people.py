@@ -45,15 +45,14 @@ def get_count(columns_file, country, year, sex):
     return count
 
 def validation(count):
-    valid_count = False
+    valid_count = True
     for _, value in count.items():
-        if re.fullmatch(r"\d+", value):
-            valid_count = True
+        if not re.fullmatch(r"\d+", value):
+            valid_count = False
 
     return valid_count
 
 def show_result(result_validation):
-    print(result_validation)
     if result_validation == False:
         print("Incorrect data")
         exit()
