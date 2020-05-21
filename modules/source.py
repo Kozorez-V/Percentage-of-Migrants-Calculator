@@ -1,5 +1,6 @@
 import os.path
 import csv
+from modules.check_call_module import check_type
 
 def load():
     print("At first, enter the path to the file:")
@@ -10,73 +11,74 @@ def load():
     return filename
     # return "./data/emigration_statistics_from_sweden.csv"
 
+@check_type
 def open_file(data_file):
     columns_file = {
         "years": {
             "column_data": [],
             "first_year_position": 2,
             "second_year_position": 5,
-            "check": r"\d+"
+            "check_type": r"\d+"
         },
 
         "all_countries_2018": {
             "column_data": 0,
             "position": 2,
-            "check": r"\d+"
+            "check_type": r"\d+"
         },
 
         "all_countries_2017": {
             "column_data": 0,
             "position": 5,
-            "check": r"\d+"
+            "check_type": r"\d+"
         },
 
         "number_country": {
             "column_data": [],
             "position": 0,
-            "check": r"\d+"
+            "check_type": r"\d+"
         },
 
         "countries": {
             "column_data": [],
             "position": 1,
-            "check": r"[a-z, \s]+"
+            "check_type": r"[a-z, \s]+"
         },
 
         "total_2018": {
             "column_data": [],
             "position": 2,
-            "check": r"\d+"
+            "check_type": r"\d+"
             },
 
         "women_2018": {
             "column_data": [],
             "position": 3,
-            "check": r"\d+"
+            "check_type": r"\d+"
         },
 
         "men_2018": {
             "column_data": [],
             "position": 4,
-            "check": r"\d+"
+            "check_type": r"\d+"
         },
 
         "total_2017": {
             "column_data": [],
             "position": 5,
-            "check": r"\d+"
+            "check_type": r"\d+"
         },
 
         "women_2017": {
             "column_data": [],
             "position": 6,
-            "check": r"\d+"
+            "check_type": r"\d+"
         },
 
         "men_2017": {
             "column_data": [],
             "position": 7,
-            "check": r"\d+"
+            "check_type": r"\d+"
         }
     }
 
