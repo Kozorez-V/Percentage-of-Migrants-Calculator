@@ -12,8 +12,7 @@ from modules import check_call_module
 greet.show()
 data_file = source.load()
 validation_file.check_format(data_file)
-data = source.open_file(data_file)
-check_call_module.check_type(data)
+data = check_call_module.check_type(source.open_file(data_file))
 validation_file.check_columns_file(data)
 
 # get number of country and validation
@@ -34,8 +33,7 @@ result_validation = year.validation(selected_year, years)
 year.show_result(result_validation, selected_year)
 
 # get count all countries and selected country
-count_people = people.get_count(data, selected_number_country, selected_year, selected_number_sex)
-check_call_module.check_type(count_people)
+count_people = check_call_module.check_type(people.get_count(data, selected_number_country, selected_year, selected_number_sex))
 result_validation = people.validation(count_people)
 people.show_result(result_validation)
 
