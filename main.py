@@ -7,12 +7,14 @@ from modules import year
 from modules import people
 from modules import calculation_of_percentage
 from modules import validation_file
+from modules import check_call_module
 
 greet.show()
 data_file = source.load()
 validation_file.check_format(data_file)
 data = source.open_file(data_file)
-# validation_file.check_columns_file(data)
+check_call_module.check_type(data)
+validation_file.check_columns_file(data)
 
 # get number of country and validation
 country.show_countries(data)
@@ -33,6 +35,7 @@ year.show_result(result_validation, selected_year)
 
 # get count all countries and selected country
 count_people = people.get_count(data, selected_number_country, selected_year, selected_number_sex)
+check_call_module.check_type(count_people)
 result_validation = people.validation(count_people)
 people.show_result(result_validation)
 

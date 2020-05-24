@@ -1,6 +1,5 @@
 import os.path
 import csv
-from modules.check_call_module import check_type
 
 def load():
     print("At first, enter the path to the file:")
@@ -11,7 +10,6 @@ def load():
     return filename
     # return "./data/emigration_statistics_from_sweden.csv"
 
-@check_type
 def open_file(data_file):
     columns_file = {
         "years": {

@@ -1,7 +1,5 @@
 import re
-from modules.check_call_module import check_type
 
-@check_type
 def get_count(columns_file, country, year, sex):
     count = {
         "count_all_countries": 0,

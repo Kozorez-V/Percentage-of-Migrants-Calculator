@@ -1,6 +1,7 @@
 import unittest
 from modules import calculation_of_percentage
 from modules.check_call_module import check_type
+from modules import people
 
 class test_calculation_of_percentage(unittest.TestCase):
     def test_calculation(self):
