@@ -39,5 +39,5 @@ result_validation = people.validation(count_people)
 people.show_result(result_validation)
 
 #get calculation result
-result = calculation_of_percentage.calculation(count_people)
+result = calculation_of_percentage.validation(calculation_of_percentage.calculation(count_people))
 calculation_of_percentage.show_calculation_result(result)
