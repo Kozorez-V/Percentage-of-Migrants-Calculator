@@ -19,6 +19,6 @@ def check_columns_file(columns_file):
 
     if len(error_messages) > 0:
         print("The file contains incorrect data\n")
-        for message in error_messages:
+        for message in error_messasges:
             print(message)
-            exit()
+        exit()
