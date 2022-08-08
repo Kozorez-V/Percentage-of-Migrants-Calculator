@@ -15,7 +15,7 @@ def validation(selected_sex):
 
 def show_result(result_validation, selected_sex):
     if result_validation == True:
-        print("You choosed " + selected_sex)
+        print(f'You choosed {selected_sex}')
     else:
         print("This choise doesn't exist")
         exit()

@@ -1,12 +1,5 @@
 #./data/emigration_statistics_from_sweden.csv
-from modules import greet
-from modules import source
-from modules import country
-from modules import sex
-from modules import year
-from modules import people
-from modules import calculation_of_percentage
-from modules import validation_file
+from modules import greet, source, country, sex, year, people, calculation_of_percentage, validation_file
 
 greet.show()
 data_file = source.load()

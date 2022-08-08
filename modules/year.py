@@ -22,7 +22,7 @@ def validation(selected_year, years):
 
 def show_result(result_validation, selected_year):
     if result_validation == True:
-        print("You choosed " + selected_year)
+        print(f'You choosed {selected_year}')
     else:
         print("There is no such year in the table")
         exit()

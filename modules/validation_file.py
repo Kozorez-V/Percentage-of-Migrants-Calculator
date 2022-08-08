@@ -14,7 +14,7 @@ def check_columns_file(columns_file):
     for _, column in columns_file.items():
         for value in column["column_data"]:
             if not re.fullmatch(column["check"], value, re.IGNORECASE):
-                message = "Incorrect data in " + str(column["position"]) + " column: " + value
+                message = f'Incorrect data in {str(column["position"])} column: {value}'
                 error_messages.append(message)
 
     if len(error_messages) > 0:

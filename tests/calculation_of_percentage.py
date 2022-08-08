@@ -9,4 +9,4 @@ class test_calculation_of_percentage(unittest.TestCase):
     }
         result = calculation_of_percentage.calculation(count)
         self.assertAlmostEqual(result, 3.8632638726)
-        self.assertAlmostEqual(result, 3.86, places = 2)
+        self.assertAlmostEqual(result, 3.86, places=2)

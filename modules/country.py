@@ -22,7 +22,7 @@ def show_result(result_validation, selected_number, columns_file):
     if result_validation == True:
         for value in columns_file["countries"]["column_data"]:
             if int(selected_number) == columns_file["countries"]["column_data"].index(value) + 1:
-                print("You choosed " + value)
+                print(f'You choosed {value}')
     else:
         print("This number isn't on the list")
         exit()
