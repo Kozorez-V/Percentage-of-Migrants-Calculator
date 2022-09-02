@@ -6,12 +6,14 @@ def get_sex():
     selected_sex = str(input())
     return selected_sex
 
+
 def validation(selected_sex):
     valid_number = False
     if selected_sex == "0" or selected_sex == "1" or selected_sex == "2":
         valid_number = True
 
     return valid_number
+
 
 def show_result(result_validation, selected_sex):
     if result_validation == True:

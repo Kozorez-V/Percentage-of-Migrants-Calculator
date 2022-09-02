@@ -1,14 +1,15 @@
 import os.path
 import csv
 
+
 def load():
     print("At first, enter the path to the file:")
     filename = str(input())
     if os.path.exists(filename) != True:
-            print("There is no such file or directory")
-            return exit()
+        print("There is no such file or directory")
+        return exit()
     return filename
-    # return "./data/emigration_statistics_from_sweden.csv"
+
 
 def open_file(data_file):
     columns_file = {
@@ -47,7 +48,7 @@ def open_file(data_file):
             "column_data": [],
             "position": 2,
             "check": r"\d+"
-            },
+        },
 
         "women_2018": {
             "column_data": [],
@@ -80,7 +81,7 @@ def open_file(data_file):
         }
     }
 
-    with open(data_file, newline ="") as data_file:
+    with open(data_file, newline="") as data_file:
         reader = csv.reader(data_file)
         for row in reader:
             if row[1] == "All countries":

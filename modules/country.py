@@ -3,11 +3,13 @@ def show_countries(columns_file):
                                columns_file["countries"]["column_data"]):
         print(number, "—", country)
 
+
 def get_number_country():
     print("Here is a numbered list of countries. You need to choose the percentage"
           " of natives which one you want to calculate. To do this, enter the number of the selected country.")
     selected_number = str(input())
     return selected_number
+
 
 def validation(selected_number, columns_file):
     numbers_country = columns_file["number_country"]["column_data"]
@@ -17,6 +19,7 @@ def validation(selected_number, columns_file):
             valid_number = True
 
     return valid_number
+
 
 def show_result(result_validation, selected_number, columns_file):
     if result_validation == True:

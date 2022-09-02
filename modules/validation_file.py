@@ -1,5 +1,6 @@
 import re
 
+
 def check_format(data_file):
     if data_file.endswith(".csv"):
         return True
@@ -7,8 +8,8 @@ def check_format(data_file):
         print("Invalid file format")
         exit()
 
-def check_columns_file(columns_file):
 
+def check_columns_file(columns_file):
     error_messages = []
 
     for _, column in columns_file.items():

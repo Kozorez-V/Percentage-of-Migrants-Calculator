@@ -1,4 +1,4 @@
-#./data/emigration_statistics_from_sweden.csv
+# ./data/emigration_statistics_from_sweden.csv
 from modules import greet, source, country, sex, year, people, calculation_of_percentage, validation_file
 
 greet.show()
@@ -27,6 +27,6 @@ year.show_result(result_validation, selected_year)
 # get count all countries and selected country
 count_people = people.get_count(data, selected_number_country, selected_year, selected_number_sex)
 
-#get calculation result
+# get calculation result
 result = calculation_of_percentage.calculation(count_people)
 calculation_of_percentage.show_calculation_result(result)

@@ -12,6 +12,7 @@ def get_year():
     selected_year = str(input())
     return selected_year
 
+
 def validation(selected_year, years):
     valid_number = False
     for year in years:
@@ -19,6 +20,7 @@ def validation(selected_year, years):
             valid_number = True
 
     return valid_number
+
 
 def show_result(result_validation, selected_year):
     if result_validation == True:
